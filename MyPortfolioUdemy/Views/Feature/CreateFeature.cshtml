@@ -1,0 +1,33 @@
+﻿@model Feature
+@{
+    ViewData["Title"] = "CreateFeature";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Öne Çıkan</h4>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Öne Çıkan Ekleme Sayfası</div>
+					</div>
+					<div class="card-body">
+
+						<form method="post">
+							<label>Başlık</label>
+							<input type="text" asp-for="Title" class="form-control" />
+							<br />
+							<label>Tanım</label>
+							<textarea rows="4" type="text" asp-for="Description" class="form-control"></textarea>
+							<br />
+							<button class="btn btn-primary">Bilgileri Ekle</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
